@@ -1,0 +1,7 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST   /booking   api.BookingEndpoint.book(name: String ?= "", time: String ?= "", day: String ?= "")
+GET    /booking   api.BookingEndpoint.get(key: String ?= "")
+DELETE /booking   api.BookingEndpoint.delete(key: String ?= "")
